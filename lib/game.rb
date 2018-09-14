@@ -140,7 +140,7 @@ class Game
     case continue
     when "y" || "Y"
       puts "Restarting..."
-      Board.reset!
+      @board.reset!
       self.start_game
     when "N" || "n"
       puts "Thank for playing!"
