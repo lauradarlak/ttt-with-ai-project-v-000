@@ -97,8 +97,8 @@ class Game
 
     player_mode = gets.strip
     
-    player_1 = nil
-    player_2 = nil
+    # player_1 = nil
+    # player_2 = nil
     
     case player_mode
     when "0"
