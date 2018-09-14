@@ -84,8 +84,8 @@ class Game
     if won?
       puts "Congratulations #{winner}!"
     else puts "Cat's Game!"
-      self.post_game
     end
+    self.post_game
   end
 
   def start_game
