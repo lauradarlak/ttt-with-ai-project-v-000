@@ -147,6 +147,7 @@ class Game
       self.start_game
     when "N" || "n"
       puts "Thank for playing!"
+      exit
     else 
       puts "I didn't understand you."
       self.post_game
