@@ -111,7 +111,7 @@ class Game
     side = gets.chomp
     if side == "X" || side == "x"
       @player_2 = Players::Computer.new("O")
-      @player_1 = Players::Human.new("O")
+      @player_1 = Players::Human.new("X")
       # @player_2.board = self.board
     elsif side == "O" || side == "o"
       @player_1 = Players::Computer.new("X")
