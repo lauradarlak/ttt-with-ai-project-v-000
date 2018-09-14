@@ -111,10 +111,12 @@ class Game
     side = gets.chomp
     if side == "X" || side == "x"
       @player_2 = Players::Computer.new("O")
-      @player_2.board = self.board
+      @player_1 = Players::Human.new("O")
+      # @player_2.board = self.board
     elsif side == "O" || side == "o"
       @player_1 = Players::Computer.new("X")
-      @player_1.board = self.board
+      @player_2 = Players::Human.new("O")
+      # @player_1.board = self.board
     else 
       puts "Incorrect input..."
       puts "Restarting..."
