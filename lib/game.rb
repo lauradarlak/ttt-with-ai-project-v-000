@@ -84,6 +84,7 @@ class Game
     if won?
       puts "Congratulations #{winner}!"
     else puts "Cat's Game!"
+      self.post_game
     end
   end
 
@@ -129,7 +130,7 @@ class Game
     else 
       puts "Incorrect input..."
       puts "Restarting..."
-      self.start
+      self.start_game
     end
   end
     
